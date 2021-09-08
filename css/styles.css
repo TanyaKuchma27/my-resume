@@ -870,6 +870,7 @@ a.current {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
+  background-color: #2f303a;
 
   color: rgba(255, 255, 255, 0.6);
 }
