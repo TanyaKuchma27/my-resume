@@ -877,12 +877,14 @@ a.current {
 
 .follow-elements {
   display: flex;
+  align-items: flex-end;
 }
 
 .footer-button {
   margin-left: 12px;
   padding-left: 29px;
   min-width: 200px;
+  height: 50px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
