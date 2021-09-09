@@ -862,6 +862,11 @@ a.current {
   background-color: #2f303a;
   box-shadow: 0px 4px 4px 0px #00000026;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  outline: none;
 }
 
 .mail-field::placeholder {
