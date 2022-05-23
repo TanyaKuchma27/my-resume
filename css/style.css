@@ -179,7 +179,19 @@ body {
 .sidebar-section {
   background-color: #1e2939;
   width: 370px;
-  padding: 40px 0;
+  padding: 20px 0;
+}
+
+.photo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {  
+  width: 90%;
+  border-radius: 50%;
+  border: 1px solid #fff;
 }
 
 .contacts-section,
@@ -196,28 +208,33 @@ body {
   margin-bottom: 10px;
 }
 /* Contacts section */
-.contacts-section-type {
+/* .contacts-section-type {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   color: #fff;
   margin-right: 7 px;
-}
+} */
 .contacts-section-link {
-  color: #565f6b;
+  color: #9dafc4;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-section-link-mail {
-  color: #565f6b;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+.contacts-section-link:hover,
+.contacts-section-link:focus {
+  color: rgb(255, 240, 240);
+}
+
+.icon-mail,
+.icon-tel {  
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .soft-skills-section {
