@@ -15,7 +15,7 @@ body {
 /* Main content section */
 
 .main-content-section {
-  padding: 100px 90px;
+  padding: 50px 90px;
 }
 
 .main-content-title {
@@ -35,7 +35,7 @@ body {
 .about-me-profession {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 17px;
   color: #000000;
   margin-bottom: 20px;
@@ -51,7 +51,7 @@ body {
 }
 
 .about-me-description {
-  width: 400px;
+  width: 500px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -65,6 +65,11 @@ body {
 }
 
 .my-projects-list {
+  list-style: none;
+  padding: 0;
+}
+
+.my-projects-orderlist {
   padding: 0 0 0 18px;
 }
 
@@ -144,6 +149,11 @@ body {
   margin-top: 40px;
 }
 
+.my-education-list {
+  list-style: none;
+  padding: 0;
+}
+
 .university-name {
   font-style: normal;
   font-weight: bold;
@@ -177,7 +187,7 @@ body {
 
 /* sidebar section */
 .sidebar-section {
-  background-color: #1e2939;
+  background-color: #263a57;
   width: 370px;
   padding: 20px 0;
 }
@@ -196,7 +206,7 @@ body {
 
 .contacts-section,
 .tech-skills-section {
-  margin: 50px 0 0 40px;
+  margin: 30px 0 0 40px;
 }
 
 .section-title {
@@ -215,7 +225,13 @@ body {
   color: #fff;
   margin-right: 7 px;
 } */
-.contacts-section-link {
+.contacts-section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-section-link {  
   color: #9dafc4;
   font-style: normal;
   font-weight: normal;
@@ -231,14 +247,18 @@ body {
   color: rgb(255, 240, 240);
 }
 
-.icon-mail,
-.icon-tel {  
+.icon {  
+  width: 16px;
+  height: 16px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .soft-skills-section {
-  margin: 45px 0 0 40px;
+  margin: 30px 0 0 40px;
 }
 
 .skills-list {
