@@ -88,12 +88,22 @@ body {
 }
 
 .my-projects-link {
+  text-decoration: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   color: #595959;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.my-projects-link:hover,
+.my-projects-link:focus {
+  color: #fb6d3a;
+  
+}
+
 
 .my-projects-bracket {
   font-style: normal;
