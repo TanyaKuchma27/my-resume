@@ -1,13 +1,48 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #3c9b3c; 
+  --primary-bg-color: #ffffff;
+  --accent-bg-color: #38190d;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  color: var(--primary-text-color);
   background-color: #f3f5f8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 .main-container {
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
-  background-color: #fff;
+  background-color: var(--primary-bg-color);
   margin: 40px auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
@@ -15,191 +50,120 @@ body {
 /* Main content section */
 
 .main-content-section {
-  padding: 50px 90px;
+  padding: 80px 90px;
 }
 
-.main-content-title {
-  font-style: normal;
+.main-content-title {  
   font-weight: bold;
   font-size: 22px;
   line-height: 27px;
-  color: #000000;
+  color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
-/* About me section */
-.about-me-section {
+.section {
   margin-bottom: 40px;
 }
 
-.about-me-profession {
-  font-style: normal;
+/* About me section */
+
+.about-me-profession {  
   font-weight: bold;
-  font-size: 20px;
-  line-height: 17px;
-  color: #000000;
+  font-size: 32px;
+  line-height: 1.5;
+  color: var(--title-text-color);
   margin-bottom: 20px;
 }
 
-.about-me-name {
-  font-style: normal;
+.about-me-name {  
   font-weight: bold;
-  font-size: 45px;
-  line-height: 55px;
-  color: #000000;
+  font-size: 52px;
+  line-height: 60px;
+  color: var(--title-text-color);
   margin-bottom: 25px;
 }
 
 .about-me-description {
-  width: 500px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
+  width: 550px;    
 }
 
 /* My projects section */
-.my-projects-section {
-  margin-bottom: 50px;
-}
-
-.my-projects-list {
-  list-style: none;
-  padding: 0;
-}
 
 .my-projects-orderlist {
-  padding: 0 0 0 18px;
+  padding-right: 18px;
+  margin-bottom: 10px;
 }
 
 .my-projects-item {
-  color: #000000;
-  font-weight: 700;
+  color: var(--title-text-color);  
 }
 
-.my-projects-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  margin-left: 5px;
-}
-
-.my-projects-link {
-  text-decoration: none;
-  font-style: normal;
+.my-projects-link {  
   font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
+  color: var(--primary-text-color);  
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .my-projects-link:hover,
 .my-projects-link:focus {
-  color: #fb6d3a;
-  
+  color: var(--accent-color);  
 }
-
 
 .my-projects-bracket {
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
   color: #000000;
 }
 
-.my-work-experience-company-block {
-  margin: 0 15px 0 0;
+/* My work experience section */
+
+.my-work-experience-position {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 10px;
 }
 
 .my-work-experience-company {
-  color: #fb6d3a;
-}
-
-.my-work-experience-position {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0 0 10px 0;
+  color: var(--accent-color);
 }
 
 .my-work-experience-period {
-  font-style: normal;
-  font-weight: normal;
+  margin-top: 10px;
   font-size: 12px;
   line-height: 15px;
   color: #a8a8a8;
-  margin: 0 0 10px 0;
-}
-
-.my-work-experience-divider {
-  color: #000000;
-}
-
-.duties-list {
-  padding: 0 0 0 18px;
-}
-
-.duty-item {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
 }
 
 /* my education section */
-.my-education-section {
-  margin-top: 40px;
-}
-
-.my-education-list {
-  list-style: none;
-  padding: 0;
-}
 
 .university-name {
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  color: #fb6d3a;
-  margin: 0 0 10px 0;
+  color: var(--accent-color);
+  margin-bottom: 10px;
 }
 
 .specialty-name {
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
   color: #000000;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .education-period {
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #a8a8a8;
-  margin: 0 0 10px 0;
-}
-
-.education-period-divider {
-  color: #000000;
+  margin-bottom: 20px;
 }
 
 /* sidebar section */
 .sidebar-section {
-  background-color: #263a57;
-  width: 370px;
-  padding: 20px 0;
+  background-color: var(--accent-bg-color);
+  width: 350px;
+  padding: 50px;
+  color: var(--primary-bg-color);
 }
 
 .photo-container{
@@ -209,40 +173,23 @@ body {
 }
 
 .photo {  
-  width: 90%;
+  width: 100%;
   border-radius: 50%;
   border: 1px solid #fff;
 }
 
-.contacts-section,
-.tech-skills-section {
-  margin: 30px 0 0 40px;
-}
-
-.section-title {
-  font-style: normal;
+.section-title {  
   font-weight: bold;
   font-size: 22px;
-  line-height: 27px;
-  color: #fff;
+  line-height: 27px;  
+  margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.contacts-section-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .contacts-section-link { 
   display: flex;
   align-items: center;  
-  color: #9dafc4;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration: none;
+  color: #3c9b3c;  
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -259,24 +206,15 @@ body {
   margin-right: 8px;
 }
 
-.soft-skills-section,
-.languages-section {
-  margin: 30px 0 0 40px;
-}
-
 .skills-list {
-  padding: 0 0 0 17px;
+  padding-left: 17px;
 }
 
 .skills-item {
-  color: #fb6d3a;
+  color: var(--accent-color);
 }
 
 .skills-item-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
   color: #fff;
 }
 
@@ -284,12 +222,6 @@ body {
   display: flex;
 }
 
-.language-name-list, 
-.language-degree-list {
+.language-name-list {
   width: 30%;
-  list-style: none;
-  padding: 0;
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
 }
