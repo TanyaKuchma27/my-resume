@@ -1,5 +1,5 @@
 :root {
-  --primary-text-color: #757575;
+  --primary-text-color: #333333;
   --title-text-color: #212121;
   --accent-color: #3c9b3c; 
   --primary-bg-color: #ffffff;
@@ -131,23 +131,25 @@ p {
 
 /* My work experience section */
 
-.my-work-experience-position {
+.my-work-experience-company {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  margin-right: 10px;
-}
-
-.my-work-experience-company {
   /* color: var(--accent-color); */
   color:#000000;
+  margin-bottom: 10px;
 }
 
-.my-work-experience-period {
-  margin-top: 10px;
+.my-work-experience-position {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.my-work-experience-period {  
   font-size: 12px;
   line-height: 15px;
-  color: #a8a8a8;
+  color: var(--title-text-color);
 }
 
 /* my education section */
@@ -170,7 +172,7 @@ p {
 .education-period {
   font-size: 12px;
   line-height: 15px;
-  color: #a8a8a8;
+  color: var(--title-text-color);
   margin-bottom: 20px;
 }
 
